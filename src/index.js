@@ -130,7 +130,8 @@ class CurrencyInput extends Component {
             selectionStart = Math.min(node.selectionStart, selectionEnd);
         }
 
-        node.setSelectionRange(selectionStart, selectionEnd);
+        // Fix for edge
+        //node.setSelectionRange(selectionStart, selectionEnd);
     }
 
 
